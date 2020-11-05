@@ -14,7 +14,7 @@ public class Q42862 {
 
         for (int i = 0; i < n; i++) {
             if (array[i] == -1) {
-                // 배열을 n+2크기로 지정했으면 i범위 체크할 필요 없었음
+                // tip : 배열을 n+2크기로 지정했으면 i범위 체크할 필요 없음
                 if (i - 1 >= 0 && array[i - 1] == 1) {
                     array[i]++;
                     array[i - 1]--;

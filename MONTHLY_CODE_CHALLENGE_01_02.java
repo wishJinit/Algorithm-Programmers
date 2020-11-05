@@ -5,7 +5,7 @@ public class MONTHLY_CODE_CHALLENGE_01_02 {
     public int solution(int n) {
         StringBuilder sb = new StringBuilder();
 
-//        Integer.toString(n, 3); 사용하면 바로 구할 수 있음
+//       tip : Integer.toString(n, 3); 사용하면 바로 구할 수 있음
         while (n > 0) {
             sb.append(n % 3);
             n /= 3;
