@@ -1,6 +1,6 @@
 
-// https://programmers.co.kr/learn/courses/30/lessons/43162
-// 네트워크
+// https://programmers.co.kr/learn/courses/30/lessons/49189
+// 가장 먼 노드
 
 import java.util.*;
 

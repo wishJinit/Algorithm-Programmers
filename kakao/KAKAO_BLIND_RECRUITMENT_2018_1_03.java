@@ -6,6 +6,8 @@ package kakao;
 import java.util.*;
 
 public class KAKAO_BLIND_RECRUITMENT_2018_1_03 {
+    final static int FLAG = 65536;
+
     public int solution(String str1, String str2) {
         Set<String> set = new HashSet<>();
         Map<String, Integer> str1Map = new HashMap<>();
@@ -13,7 +15,7 @@ public class KAKAO_BLIND_RECRUITMENT_2018_1_03 {
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
 
-        if(str1.equals(str2)) return 65536;
+        if(str1.equals(str2)) return FLAG;
 
         for (int i = 1, len = str1.length(); i < len; i++) {
             if (checkAlphabet(str1.charAt(i - 1)) && checkAlphabet(str1.charAt(i))) {
@@ -39,7 +41,7 @@ public class KAKAO_BLIND_RECRUITMENT_2018_1_03 {
             union += Math.max(str1Cnt, str2Cnt);
         }
 
-        return (int) ((float) intersection / union * 65536);
+        return (int) ((float) intersection / union * FLAG);
     }
 
     private boolean checkAlphabet(char c) {
